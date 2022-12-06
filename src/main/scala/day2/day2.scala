@@ -29,7 +29,7 @@ val outcomeMap = Map(
 
 def solution(): Unit = 
   var runningTotal = 0
-  Source.fromFile("C:/Users/slink/projects/adventofcode22/src/main/resources/day2/input.txt")
+  Source.fromFile("src/main/resources/day2/input.txt")
     .getLines()
     .foreach { line =>
       runningTotal += getScore(line)

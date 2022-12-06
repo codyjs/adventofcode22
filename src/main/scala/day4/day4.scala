@@ -5,7 +5,7 @@ import scala.io.Source
 case class Range(val low: Int, val high: Int)
 
 def solution(): Unit = 
-  var runningTotal = Source.fromFile("C:/Users/slink/projects/adventofcode22/src/main/resources/day4/input.txt")
+  var runningTotal = Source.fromFile("src/main/resources/day4/input.txt")
     .getLines()
     .map(parseLine)
     .count(doRangesPartiallyOverlap)

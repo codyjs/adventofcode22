@@ -5,7 +5,7 @@ import scala.io.Source
 case class Instruction(val moveCount: Int, val fromId: Int, val toId: Int)
 
 def solution(): Unit = 
-  val inputIterator = Source.fromFile("C:/Users/slink/projects/adventofcode22/src/main/resources/day5/input.txt").getLines()
+  val inputIterator = Source.fromFile("src/main/resources/day5/input.txt").getLines()
   val stacks = getStacksFromInput(inputIterator)
   val procedure = getInstructionsFromInput(inputIterator)
   val newStacks = executeProcedurePart2(stacks, procedure)

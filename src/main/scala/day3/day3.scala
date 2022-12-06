@@ -4,7 +4,7 @@ import scala.io.Source
 
 def solution(): Unit = 
   var runningTotal = 0
-  Source.fromFile("C:/Users/slink/projects/adventofcode22/src/main/resources/day3/input.txt")
+  Source.fromFile("src/main/resources/day3/input.txt")
     .getLines()
     .grouped(3)
     .foreach { group =>

@@ -5,7 +5,7 @@ import scala.io.Source
 def solution(): Unit = 
   var list = List.empty[Int]
   var runningTotal = 0
-  Source.fromFile("C:/Users/slink/projects/adventofcode22/src/main/resources/day1/input.txt")
+  Source.fromFile("src/main/resources/day1/input.txt")
     .getLines()
     .foreach { line => if "".equals(line) then {
       list = runningTotal :: list
