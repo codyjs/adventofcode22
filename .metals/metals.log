@@ -1,0 +1,1597 @@
+2022.12.02 23:14:52 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\slink\projects\adventofcode22\.metals\lsp.trace.json or C:\Users\slink\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.12.02 23:14:53 INFO  logging to file C:\Users\slink\projects\adventofcode22\.metals\metals.log
+2022.12.02 23:14:53 INFO  Started: Metals version 0.11.9 in workspace 'C:\Users\slink\projects\adventofcode22' for client Visual Studio Code 1.73.1.
+2022.12.02 23:14:55 INFO  time: initialize in 1.82s
+2022.12.02 23:14:55 WARN  Build server is not auto-connectable.
+2022.12.02 23:14:55 WARN  no build tool detected in workspace 'C:\Users\slink\projects\adventofcode22'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.12.02 23:16:40 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\build.sbt
+2022.12.02 23:16:43 INFO  no build target found for C:\Users\slink\projects\adventofcode22\day1\build.sbt. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.02 23:16:44 INFO  time: code lens generation in 3.75s
+2022.12.02 23:17:00 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+error while checking new Source.fromFile(null)
+error while checking @main def hello: Unit = new Source.fromFile(null)
+error while checking package <empty> {
+  import scala.io.Source
+  @main def hello: Unit = new Source.fromFile(null)
+}
+Dec 02, 2022 11:21:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: assertion failed: position error, parent span does not contain child span
+parent      = new Source.fromFile(null) # -1,
+parent span = [54..86],
+child       = null # -1,
+child span  = [74..88..88]
+java.lang.AssertionError: assertion failed: position error, parent span does not contain child span
+parent      = new Source.fromFile(null) # -1,
+parent span = [54..86],
+child       = null # -1,
+child span  = [74..88..88]
+	at scala.runtime.Scala3RunTime$.assertFailed(Scala3RunTime.scala:8)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:172)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.parsing.Parser.parse$$anonfun$1(ParserPhase.scala:38)
+	at dotty.tools.dotc.parsing.Parser.parse$$anonfun$adapted$1(ParserPhase.scala:39)
+	at scala.Function0.apply$mcV$sp(Function0.scala:42)
+	at dotty.tools.dotc.core.Phases$Phase.monitor(Phases.scala:417)
+	at dotty.tools.dotc.parsing.Parser.parse(ParserPhase.scala:39)
+	at dotty.tools.dotc.parsing.Parser.runOn$$anonfun$1(ParserPhase.scala:48)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.parsing.Parser.runOn(ParserPhase.scala:48)
+	at dotty.tools.dotc.Run.runPhases$1$$anonfun$1(Run.scala:234)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1321)
+	at dotty.tools.dotc.Run.runPhases$1(Run.scala:245)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$1(Run.scala:253)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$adapted$1(Run.scala:262)
+	at dotty.tools.dotc.util.Stats$.maybeMonitored(Stats.scala:68)
+	at dotty.tools.dotc.Run.compileUnits(Run.scala:262)
+	at dotty.tools.dotc.Run.compileSources(Run.scala:186)
+	at dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:165)
+	at scala.meta.internal.pc.MetalsDriver.run(MetalsDriver.scala:48)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:44)
+
+error while checking new Source.fromFile(null)
+error while checking @main def hello: Unit = new Source.fromFile(null)
+error while checking package <empty> {
+  import scala.io.Source
+  @main def hello: Unit = new Source.fromFile(null)
+}
+Dec 02, 2022 11:21:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: assertion failed: position error, parent span does not contain child span
+parent      = new Source.fromFile(null) # -1,
+parent span = [54..86],
+child       = null # -1,
+child span  = [74..88..88]
+java.lang.AssertionError: assertion failed: position error, parent span does not contain child span
+parent      = new Source.fromFile(null) # -1,
+parent span = [54..86],
+child       = null # -1,
+child span  = [74..88..88]
+	at scala.runtime.Scala3RunTime$.assertFailed(Scala3RunTime.scala:8)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:172)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.parsing.Parser.parse$$anonfun$1(ParserPhase.scala:38)
+	at dotty.tools.dotc.parsing.Parser.parse$$anonfun$adapted$1(ParserPhase.scala:39)
+	at scala.Function0.apply$mcV$sp(Function0.scala:42)
+	at dotty.tools.dotc.core.Phases$Phase.monitor(Phases.scala:417)
+	at dotty.tools.dotc.parsing.Parser.parse(ParserPhase.scala:39)
+	at dotty.tools.dotc.parsing.Parser.runOn$$anonfun$1(ParserPhase.scala:48)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.parsing.Parser.runOn(ParserPhase.scala:48)
+	at dotty.tools.dotc.Run.runPhases$1$$anonfun$1(Run.scala:234)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1321)
+	at dotty.tools.dotc.Run.runPhases$1(Run.scala:245)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$1(Run.scala:253)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$adapted$1(Run.scala:262)
+	at dotty.tools.dotc.util.Stats$.maybeMonitored(Stats.scala:68)
+	at dotty.tools.dotc.Run.compileUnits(Run.scala:262)
+	at dotty.tools.dotc.Run.compileSources(Run.scala:186)
+	at dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:165)
+	at scala.meta.internal.pc.MetalsDriver.run(MetalsDriver.scala:48)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:44)
+
+Dec 02, 2022 11:25:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 614
+2022.12.02 23:26:28 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:26:54 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:27:10 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:27:41 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:27:46 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:28:22 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:29:27 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\build.sbt
+2022.12.02 23:29:34 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\build.sbt
+2022.12.02 23:29:39 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:29:57 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:30:29 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:32:34 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+Dec 02, 2022 11:32:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.nio.file.FileSystemNotFoundException: C:\Program%20Files\Java\jdk1.8.0_201\src.zip
+java.util.concurrent.CompletionException: java.nio.file.FileSystemNotFoundException: C:\Program%20Files\Java\jdk1.8.0_201\src.zip
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:647)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1977)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.nio.file.FileSystemNotFoundException: C:\Program%20Files\Java\jdk1.8.0_201\src.zip
+	at com.sun.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:120)
+	at com.sun.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117)
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:326)
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:276)
+	at scala.meta.internal.io.PlatformFileIO$.newFileSystem(PlatformFileIO.scala:104)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:112)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:139)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.Compilers.$anonfun$definition$3(Compilers.scala:503)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionJavaList.map(MetalsEnrichments.scala:227)
+	at scala.meta.internal.metals.Compilers.$anonfun$definition$2(Compilers.scala:502)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Exception in thread "pool-3-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2022.12.02 23:32:50 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+Dec 02, 2022 11:33:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2022.12.02 23:33:07 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:35:08 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+Dec 02, 2022 11:36:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1580
+2022.12.02 23:36:06 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+Dec 02, 2022 11:36:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1639
+2022.12.02 23:39:22 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:39:30 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:40:52 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:41:39 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:42:08 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:45:29 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.02 23:45:34 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.02 23:46:44 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+Dec 02, 2022 11:46:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2276
+2022.12.02 23:46:50 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:46:50 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:46:50 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+2022.12.02 23:47:45 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.02 23:48:52 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.02 23:49:44 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.02 23:50:07 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.02 23:50:20 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.02 23:50:24 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+Exception in thread "pool-3-thread-2" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2022.12.02 23:50:24 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+Dec 02, 2022 11:50:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2844
+2022.12.02 23:50:28 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.02 23:50:46 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.02 23:50:49 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.02 23:50:54 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.02 23:50:59 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+Exception in thread "pool-3-thread-3" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2022.12.02 23:54:35 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.02 23:57:36 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+Dec 02, 2022 11:58:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3908
+2022.12.02 23:58:48 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.02 23:59:18 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.02 23:59:26 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.03 00:00:24 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.03 00:00:45 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.03 00:01:33 INFO  shutting down Metals
+2022.12.03 15:37:47 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\slink\projects\adventofcode22\.metals\lsp.trace.json or C:\Users\slink\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.12.03 15:37:48 INFO  logging to file C:\Users\slink\projects\adventofcode22\.metals\metals.log
+2022.12.03 15:37:48 INFO  Started: Metals version 0.11.9 in workspace 'C:\Users\slink\projects\adventofcode22' for client Visual Studio Code 1.73.1.
+2022.12.03 15:37:50 INFO  time: initialize in 1.71s
+2022.12.03 15:37:50 WARN  Build server is not auto-connectable.
+2022.12.03 15:37:50 WARN  no build tool detected in workspace 'C:\Users\slink\projects\adventofcode22'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.12.03 15:37:49 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.03 15:37:53 INFO  no build target found for C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.03 15:37:55 INFO  time: code lens generation in 4.7s
+2022.12.03 15:44:18 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+Dec 03, 2022 3:50:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 982
+2022.12.03 15:50:46 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.03 15:51:59 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.03 15:52:34 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+Dec 03, 2022 3:52:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1239
+Dec 03, 2022 3:52:58 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1619)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+Dec 03, 2022 3:52:58 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1619)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.12.03 15:53:59 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.03 15:53:59 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day1\src\main\scala\Main.scala
+Dec 03, 2022 3:55:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1545
+2022.12.03 15:57:34 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+Dec 03, 2022 3:58:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1910
+2022.12.03 15:58:26 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+Dec 03, 2022 3:59:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1619)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.12.03 15:59:19 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.03 16:01:01 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.03 16:02:45 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+Exception in thread "pool-3-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)2022.12.03 16:03:12 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2022.12.03 16:03:37 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.03 16:03:55 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.03 16:04:41 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.03 16:04:57 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day2\src\main\scala\Main.scala
+2022.12.03 16:08:01 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+Dec 03, 2022 4:08:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2629
+2022.12.03 16:08:23 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+Dec 03, 2022 4:15:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3459
+Dec 03, 2022 4:15:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3463
+Dec 03, 2022 4:16:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3484
+Dec 03, 2022 4:16:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3537
+2022.12.03 16:17:57 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 16:20:53 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+Dec 03, 2022 4:21:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4330
+2022.12.03 16:21:45 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+Dec 03, 2022 4:21:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4359
+2022.12.03 16:21:45 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 16:22:00 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+Dec 03, 2022 4:23:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4567
+2022.12.03 16:23:39 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 16:24:18 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 16:27:06 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 16:28:21 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 16:29:53 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 16:30:29 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 16:35:41 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 16:45:27 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+Dec 03, 2022 4:46:33 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1566)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1570)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1570)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+Dec 03, 2022 4:46:33 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1566)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1570)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1570)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.12.03 16:49:22 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 16:49:54 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+Dec 03, 2022 4:51:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6466
+Dec 03, 2022 4:52:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6490
+Dec 03, 2022 4:54:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1570)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.12.03 16:54:44 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 16:54:52 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+Dec 03, 2022 4:54:58 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1570)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+Dec 03, 2022 4:55:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7084
+2022.12.03 16:55:27 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 16:55:53 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 16:56:15 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 16:59:05 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 17:00:07 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 17:02:00 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+Dec 03, 2022 5:04:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7462
+2022.12.03 17:05:34 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 17:14:33 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+Dec 03, 2022 5:14:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+dotty.tools.dotc.core.TypeError: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+	at dotty.tools.dotc.core.Types$NamedType.argDenot(Types.scala:2337)
+	at dotty.tools.dotc.core.Types$NamedType.fromDesignator$1(Types.scala:2250)
+	at dotty.tools.dotc.core.Types$NamedType.computeDenot(Types.scala:2268)
+	at dotty.tools.dotc.core.Types$NamedType.denot(Types.scala:2223)
+	at dotty.tools.dotc.core.Types$NamedType.info(Types.scala:2211)
+	at dotty.tools.dotc.core.Types$Type.isRef(Types.scala:190)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS$$anonfun$1(PlainPrinter.scala:395)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS(PlainPrinter.scala:426)
+	at dotty.tools.dotc.printing.PlainPrinter.toText$$anonfun$1(PlainPrinter.scala:146)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toText(PlainPrinter.scala:256)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText$$anonfun$1(RefinedPrinter.scala:298)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText(RefinedPrinter.scala:300)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.toText(DotcPrinter.scala:107)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.tpe(DotcPrinter.scala:44)
+	at scala.meta.internal.pc.printer.MetalsPrinter.tpe(MetalsPrinter.scala:76)
+	at scala.meta.internal.pc.printer.MetalsPrinter.paramLabel(MetalsPrinter.scala:351)
+	at scala.meta.internal.pc.printer.MetalsPrinter.$anonfun$3(MetalsPrinter.scala:184)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1$$anonfun$1(MetalsPrinter.scala:187)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1(MetalsPrinter.scala:192)
+	at scala.meta.internal.pc.printer.MetalsPrinter.defaultMethodSignature(MetalsPrinter.scala:195)
+	at scala.meta.internal.pc.printer.MetalsPrinter.hoverSymbol(MetalsPrinter.scala:102)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:101)
+
+Dec 03, 2022 5:14:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+dotty.tools.dotc.core.TypeError: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+	at dotty.tools.dotc.core.Types$NamedType.argDenot(Types.scala:2337)
+	at dotty.tools.dotc.core.Types$NamedType.fromDesignator$1(Types.scala:2250)
+	at dotty.tools.dotc.core.Types$NamedType.computeDenot(Types.scala:2268)
+	at dotty.tools.dotc.core.Types$NamedType.denot(Types.scala:2223)
+	at dotty.tools.dotc.core.Types$NamedType.info(Types.scala:2211)
+	at dotty.tools.dotc.core.Types$Type.isRef(Types.scala:190)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS$$anonfun$1(PlainPrinter.scala:395)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS(PlainPrinter.scala:426)
+	at dotty.tools.dotc.printing.PlainPrinter.toText$$anonfun$1(PlainPrinter.scala:146)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toText(PlainPrinter.scala:256)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText$$anonfun$1(RefinedPrinter.scala:298)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText(RefinedPrinter.scala:300)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.toText(DotcPrinter.scala:107)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.tpe(DotcPrinter.scala:44)
+	at scala.meta.internal.pc.printer.MetalsPrinter.tpe(MetalsPrinter.scala:76)
+	at scala.meta.internal.pc.printer.MetalsPrinter.paramLabel(MetalsPrinter.scala:351)
+	at scala.meta.internal.pc.printer.MetalsPrinter.$anonfun$3(MetalsPrinter.scala:184)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1$$anonfun$1(MetalsPrinter.scala:187)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1(MetalsPrinter.scala:192)
+	at scala.meta.internal.pc.printer.MetalsPrinter.defaultMethodSignature(MetalsPrinter.scala:195)
+	at scala.meta.internal.pc.printer.MetalsPrinter.hoverSymbol(MetalsPrinter.scala:102)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:101)
+
+Dec 03, 2022 5:14:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+dotty.tools.dotc.core.TypeError: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+	at dotty.tools.dotc.core.Types$NamedType.argDenot(Types.scala:2337)
+	at dotty.tools.dotc.core.Types$NamedType.fromDesignator$1(Types.scala:2250)
+	at dotty.tools.dotc.core.Types$NamedType.computeDenot(Types.scala:2268)
+	at dotty.tools.dotc.core.Types$NamedType.denot(Types.scala:2223)
+	at dotty.tools.dotc.core.Types$NamedType.info(Types.scala:2211)
+	at dotty.tools.dotc.core.Types$Type.isRef(Types.scala:190)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS$$anonfun$1(PlainPrinter.scala:395)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS(PlainPrinter.scala:426)
+	at dotty.tools.dotc.printing.PlainPrinter.toText$$anonfun$1(PlainPrinter.scala:146)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toText(PlainPrinter.scala:256)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText$$anonfun$1(RefinedPrinter.scala:298)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText(RefinedPrinter.scala:300)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.toText(DotcPrinter.scala:107)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.tpe(DotcPrinter.scala:44)
+	at scala.meta.internal.pc.printer.MetalsPrinter.tpe(MetalsPrinter.scala:76)
+	at scala.meta.internal.pc.printer.MetalsPrinter.paramLabel(MetalsPrinter.scala:351)
+	at scala.meta.internal.pc.printer.MetalsPrinter.$anonfun$3(MetalsPrinter.scala:184)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1$$anonfun$1(MetalsPrinter.scala:187)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1(MetalsPrinter.scala:192)
+	at scala.meta.internal.pc.printer.MetalsPrinter.defaultMethodSignature(MetalsPrinter.scala:195)
+	at scala.meta.internal.pc.printer.MetalsPrinter.hoverSymbol(MetalsPrinter.scala:102)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:101)
+
+Dec 03, 2022 5:14:56 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+dotty.tools.dotc.core.TypeError: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+	at dotty.tools.dotc.core.Types$NamedType.argDenot(Types.scala:2337)
+	at dotty.tools.dotc.core.Types$NamedType.fromDesignator$1(Types.scala:2250)
+	at dotty.tools.dotc.core.Types$NamedType.computeDenot(Types.scala:2268)
+	at dotty.tools.dotc.core.Types$NamedType.denot(Types.scala:2223)
+	at dotty.tools.dotc.core.Types$NamedType.info(Types.scala:2211)
+	at dotty.tools.dotc.core.Types$Type.isRef(Types.scala:190)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS$$anonfun$1(PlainPrinter.scala:395)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS(PlainPrinter.scala:426)
+	at dotty.tools.dotc.printing.PlainPrinter.toText$$anonfun$1(PlainPrinter.scala:146)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toText(PlainPrinter.scala:256)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText$$anonfun$1(RefinedPrinter.scala:298)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText(RefinedPrinter.scala:300)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.toText(DotcPrinter.scala:107)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.tpe(DotcPrinter.scala:44)
+	at scala.meta.internal.pc.printer.MetalsPrinter.tpe(MetalsPrinter.scala:76)
+	at scala.meta.internal.pc.printer.MetalsPrinter.paramLabel(MetalsPrinter.scala:351)
+	at scala.meta.internal.pc.printer.MetalsPrinter.$anonfun$3(MetalsPrinter.scala:184)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1$$anonfun$1(MetalsPrinter.scala:187)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1(MetalsPrinter.scala:192)
+	at scala.meta.internal.pc.printer.MetalsPrinter.defaultMethodSignature(MetalsPrinter.scala:195)
+	at scala.meta.internal.pc.printer.MetalsPrinter.hoverSymbol(MetalsPrinter.scala:102)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:101)
+
+Dec 03, 2022 5:14:56 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+dotty.tools.dotc.core.TypeError: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+	at dotty.tools.dotc.core.Types$NamedType.argDenot(Types.scala:2337)
+	at dotty.tools.dotc.core.Types$NamedType.fromDesignator$1(Types.scala:2250)
+	at dotty.tools.dotc.core.Types$NamedType.computeDenot(Types.scala:2268)
+	at dotty.tools.dotc.core.Types$NamedType.denot(Types.scala:2223)
+	at dotty.tools.dotc.core.Types$NamedType.info(Types.scala:2211)
+	at dotty.tools.dotc.core.Types$Type.isRef(Types.scala:190)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS$$anonfun$1(PlainPrinter.scala:395)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS(PlainPrinter.scala:426)
+	at dotty.tools.dotc.printing.PlainPrinter.toText$$anonfun$1(PlainPrinter.scala:146)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toText(PlainPrinter.scala:256)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText$$anonfun$1(RefinedPrinter.scala:298)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText(RefinedPrinter.scala:300)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.toText(DotcPrinter.scala:107)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.tpe(DotcPrinter.scala:44)
+	at scala.meta.internal.pc.printer.MetalsPrinter.tpe(MetalsPrinter.scala:76)
+	at scala.meta.internal.pc.printer.MetalsPrinter.paramLabel(MetalsPrinter.scala:351)
+	at scala.meta.internal.pc.printer.MetalsPrinter.$anonfun$3(MetalsPrinter.scala:184)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1$$anonfun$1(MetalsPrinter.scala:187)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1(MetalsPrinter.scala:192)
+	at scala.meta.internal.pc.printer.MetalsPrinter.defaultMethodSignature(MetalsPrinter.scala:195)
+	at scala.meta.internal.pc.printer.MetalsPrinter.hoverSymbol(MetalsPrinter.scala:102)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:101)
+
+Dec 03, 2022 5:14:56 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+dotty.tools.dotc.core.TypeError: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+	at dotty.tools.dotc.core.Types$NamedType.argDenot(Types.scala:2337)
+	at dotty.tools.dotc.core.Types$NamedType.fromDesignator$1(Types.scala:2250)
+	at dotty.tools.dotc.core.Types$NamedType.computeDenot(Types.scala:2268)
+	at dotty.tools.dotc.core.Types$NamedType.denot(Types.scala:2223)
+	at dotty.tools.dotc.core.Types$NamedType.info(Types.scala:2211)
+	at dotty.tools.dotc.core.Types$Type.isRef(Types.scala:190)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS$$anonfun$1(PlainPrinter.scala:395)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS(PlainPrinter.scala:426)
+	at dotty.tools.dotc.printing.PlainPrinter.toText$$anonfun$1(PlainPrinter.scala:146)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toText(PlainPrinter.scala:256)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText$$anonfun$1(RefinedPrinter.scala:298)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText(RefinedPrinter.scala:300)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.toText(DotcPrinter.scala:107)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.tpe(DotcPrinter.scala:44)
+	at scala.meta.internal.pc.printer.MetalsPrinter.tpe(MetalsPrinter.scala:76)
+	at scala.meta.internal.pc.printer.MetalsPrinter.paramLabel(MetalsPrinter.scala:351)
+	at scala.meta.internal.pc.printer.MetalsPrinter.$anonfun$3(MetalsPrinter.scala:184)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1$$anonfun$1(MetalsPrinter.scala:187)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1(MetalsPrinter.scala:192)
+	at scala.meta.internal.pc.printer.MetalsPrinter.defaultMethodSignature(MetalsPrinter.scala:195)
+	at scala.meta.internal.pc.printer.MetalsPrinter.hoverSymbol(MetalsPrinter.scala:102)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:101)
+
+Dec 03, 2022 5:14:57 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+dotty.tools.dotc.core.TypeError: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+	at dotty.tools.dotc.core.Types$NamedType.argDenot(Types.scala:2337)
+	at dotty.tools.dotc.core.Types$NamedType.fromDesignator$1(Types.scala:2250)
+	at dotty.tools.dotc.core.Types$NamedType.computeDenot(Types.scala:2268)
+	at dotty.tools.dotc.core.Types$NamedType.denot(Types.scala:2223)
+	at dotty.tools.dotc.core.Types$NamedType.info(Types.scala:2211)
+	at dotty.tools.dotc.core.Types$Type.isRef(Types.scala:190)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS$$anonfun$1(PlainPrinter.scala:395)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS(PlainPrinter.scala:426)
+	at dotty.tools.dotc.printing.PlainPrinter.toText$$anonfun$1(PlainPrinter.scala:146)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toText(PlainPrinter.scala:256)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText$$anonfun$1(RefinedPrinter.scala:298)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText(RefinedPrinter.scala:300)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.toText(DotcPrinter.scala:107)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.tpe(DotcPrinter.scala:44)
+	at scala.meta.internal.pc.printer.MetalsPrinter.tpe(MetalsPrinter.scala:76)
+	at scala.meta.internal.pc.printer.MetalsPrinter.paramLabel(MetalsPrinter.scala:351)
+	at scala.meta.internal.pc.printer.MetalsPrinter.$anonfun$3(MetalsPrinter.scala:184)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1$$anonfun$1(MetalsPrinter.scala:187)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1(MetalsPrinter.scala:192)
+	at scala.meta.internal.pc.printer.MetalsPrinter.defaultMethodSignature(MetalsPrinter.scala:195)
+	at scala.meta.internal.pc.printer.MetalsPrinter.hoverSymbol(MetalsPrinter.scala:102)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:101)
+
+Dec 03, 2022 5:15:05 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+dotty.tools.dotc.core.TypeError: bad parameter reference A at typer
+the parameter is type A in trait IterableOnceOps but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = ,
+constraint =  uninstantiated variables: 
+ constrained types: 
+ bounds: 
+ ordering: 
+	at dotty.tools.dotc.core.Types$NamedType.argDenot(Types.scala:2337)
+	at dotty.tools.dotc.core.Types$NamedType.fromDesignator$1(Types.scala:2250)
+	at dotty.tools.dotc.core.Types$NamedType.computeDenot(Types.scala:2268)
+	at dotty.tools.dotc.core.Types$NamedType.denot(Types.scala:2223)
+	at dotty.tools.dotc.core.Types$NamedType.info(Types.scala:2211)
+	at dotty.tools.dotc.core.Types$Type.isRef(Types.scala:190)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS$$anonfun$1(PlainPrinter.scala:395)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toTextRHS(PlainPrinter.scala:426)
+	at dotty.tools.dotc.printing.PlainPrinter.toText$$anonfun$1(PlainPrinter.scala:146)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.PlainPrinter.toText(PlainPrinter.scala:256)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText$$anonfun$1(RefinedPrinter.scala:298)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText(RefinedPrinter.scala:300)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.toText(DotcPrinter.scala:107)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.tpe(DotcPrinter.scala:44)
+	at scala.meta.internal.pc.printer.MetalsPrinter.tpe(MetalsPrinter.scala:76)
+	at scala.meta.internal.pc.printer.MetalsPrinter.paramLabel(MetalsPrinter.scala:351)
+	at scala.meta.internal.pc.printer.MetalsPrinter.$anonfun$3(MetalsPrinter.scala:184)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1$$anonfun$1(MetalsPrinter.scala:187)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1(MetalsPrinter.scala:192)
+	at scala.meta.internal.pc.printer.MetalsPrinter.defaultMethodSignature(MetalsPrinter.scala:195)
+	at scala.meta.internal.pc.printer.MetalsPrinter.hoverSymbol(MetalsPrinter.scala:102)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:101)
+
+2022.12.03 17:16:43 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 17:16:48 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 17:16:48 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 17:17:12 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.03 17:17:42 INFO  shutting down Metals
+2022.12.04 17:52:37 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\slink\projects\adventofcode22\.metals\lsp.trace.json or C:\Users\slink\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.12.04 17:52:37 INFO  logging to file C:\Users\slink\projects\adventofcode22\.metals\metals.log
+2022.12.04 17:52:37 INFO  Started: Metals version 0.11.9 in workspace 'C:\Users\slink\projects\adventofcode22' for client Visual Studio Code 1.73.1.
+2022.12.04 17:52:39 INFO  time: initialize in 1.64s
+2022.12.04 17:52:39 WARN  Build server is not auto-connectable.
+2022.12.04 17:52:39 WARN  no build tool detected in workspace 'C:\Users\slink\projects\adventofcode22'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.12.04 17:52:39 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala
+2022.12.04 17:52:43 INFO  no build target found for C:\Users\slink\projects\adventofcode22\day3\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.04 17:52:45 INFO  time: code lens generation in 4.96s
+2022.12.04 19:26:30 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+Dec 04, 2022 7:26:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 20
+2022.12.04 19:27:18 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+2022.12.04 19:28:43 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+Dec 04, 2022 7:30:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 621
+2022.12.04 19:34:43 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+2022.12.04 19:35:48 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+Dec 04, 2022 7:36:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1491
+2022.12.04 19:37:48 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+2022.12.04 19:38:41 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+Dec 04, 2022 7:39:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1817
+2022.12.04 19:40:08 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+2022.12.04 19:41:54 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+2022.12.04 19:42:12 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+2022.12.04 19:53:23 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+Dec 04, 2022 7:54:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: 995
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: 995
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:647)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1977)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: 995
+	at java.lang.String.substring(String.java:1963)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.getIndentForPos(FlatMapToForComprehensionCodeAction.scala:667)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$4(FlatMapToForComprehensionCodeAction.scala:55)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$3(FlatMapToForComprehensionCodeAction.scala:51)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$2(FlatMapToForComprehensionCodeAction.scala:50)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$1(FlatMapToForComprehensionCodeAction.scala:49)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.12.04 19:55:46 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+2022.12.04 19:55:56 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+2022.12.04 19:56:25 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+2022.12.04 20:57:09 INFO  shutting down Metals
+2022.12.05 15:08:19 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\slink\projects\adventofcode22\.metals\lsp.trace.json or C:\Users\slink\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.12.05 15:08:19 INFO  logging to file C:\Users\slink\projects\adventofcode22\.metals\metals.log
+2022.12.05 15:08:19 INFO  Started: Metals version 0.11.9 in workspace 'C:\Users\slink\projects\adventofcode22' for client Visual Studio Code 1.73.1.
+2022.12.05 15:08:20 INFO  time: initialize in 1.12s
+2022.12.05 15:08:21 WARN  Build server is not auto-connectable.
+2022.12.05 15:08:21 WARN  no build tool detected in workspace 'C:\Users\slink\projects\adventofcode22'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.12.05 15:08:21 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 15:08:22 INFO  no build target found for C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.05 15:08:24 INFO  time: code lens generation in 2.72s
+2022.12.05 15:08:35 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+Dec 05, 2022 3:13:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 415
+2022.12.05 15:14:53 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 15:18:20 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 15:23:15 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 15:43:37 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+2022.12.05 15:45:20 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+Dec 05, 2022 4:32:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2721
+2022.12.05 16:43:01 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+Dec 05, 2022 4:49:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4018
+Dec 05, 2022 4:53:05 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+Dec 05, 2022 4:53:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.12.05 16:53:32 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+Dec 05, 2022 4:53:45 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.12.05 16:53:54 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 16:54:41 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 16:54:47 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 16:54:47 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 16:54:47 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 16:54:47 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 16:54:59 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+Dec 05, 2022 4:55:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4837
+2022.12.05 16:55:41 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 16:58:21 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 16:59:28 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 17:00:06 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 17:00:46 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 17:01:13 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 17:02:05 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 17:02:11 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 17:02:14 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 17:03:03 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 17:03:13 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 17:03:41 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 17:04:28 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+Dec 05, 2022 5:05:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5485
+2022.12.05 17:05:42 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 17:06:18 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+2022.12.05 17:06:37 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+2022.12.05 17:06:37 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day4\src\main\scala\Main.scala
+2022.12.05 17:06:40 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 17:07:06 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 17:08:10 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+Dec 05, 2022 9:09:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6315
+2022.12.05 21:10:01 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:10:59 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:11:57 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:12:03 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+Dec 05, 2022 9:12:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6469
+2022.12.05 21:12:31 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:12:50 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+Dec 05, 2022 9:17:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6759
+Dec 05, 2022 9:17:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6769
+2022.12.05 21:18:44 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:21:27 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:21:33 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:31:26 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+Dec 05, 2022 9:37:56 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: head of empty list
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:662)
+	at scala.collection.immutable.Nil$.head(List.scala:661)
+	at dotty.tools.dotc.core.TypeOps$.intersect$1(TypeOps.scala:215)
+	at dotty.tools.dotc.core.TypeOps$.$anonfun$3(TypeOps.scala:348)
+	at dotty.tools.dotc.core.Types$Type.mapReduceOr(Types.scala:479)
+	at dotty.tools.dotc.core.TypeOps$.approximateOr$1(TypeOps.scala:348)
+	at dotty.tools.dotc.core.TypeOps$.orDominator(TypeOps.scala:362)
+	at dotty.tools.dotc.core.Types$OrType.join(Types.scala:3287)
+	at dotty.tools.dotc.core.Types$OrType.widenUnionWithoutNull(Types.scala:3303)
+	at dotty.tools.dotc.core.Types$Type.widenUnion(Types.scala:1295)
+	at dotty.tools.dotc.core.ConstraintHandling.widenOr$1(ConstraintHandling.scala:530)
+	at dotty.tools.dotc.core.ConstraintHandling.widenInferred(ConstraintHandling.scala:543)
+	at dotty.tools.dotc.core.ConstraintHandling.widenInferred$(ConstraintHandling.scala:27)
+	at dotty.tools.dotc.core.TypeComparer.widenInferred(TypeComparer.scala:30)
+	at dotty.tools.dotc.core.ConstraintHandling.instanceType(ConstraintHandling.scala:560)
+	at dotty.tools.dotc.core.ConstraintHandling.instanceType$(ConstraintHandling.scala:27)
+	at dotty.tools.dotc.core.TypeComparer.instanceType(TypeComparer.scala:30)
+	at dotty.tools.dotc.core.TypeComparer$.instanceType(TypeComparer.scala:2822)
+	at dotty.tools.dotc.core.Types$TypeVar.instantiate(Types.scala:4801)
+	at dotty.tools.dotc.typer.Inferencing$IsFullyDefinedAccumulator.instantiate(Inferencing.scala:167)
+	at dotty.tools.dotc.typer.Inferencing$IsFullyDefinedAccumulator.apply(Inferencing.scala:189)
+	at dotty.tools.dotc.typer.Inferencing$IsFullyDefinedAccumulator.apply(Inferencing.scala:174)
+	at dotty.tools.dotc.core.Types$TypeAccumulator.op$proxy23$1(Types.scala:6073)
+	at dotty.tools.dotc.core.Types$TypeAccumulator.foldArgs$3(Types.scala:6073)
+	at dotty.tools.dotc.core.Types$TypeAccumulator.foldOver(Types.scala:6077)
+	at dotty.tools.dotc.typer.Inferencing$IsFullyDefinedAccumulator.apply(Inferencing.scala:199)
+	at dotty.tools.dotc.typer.Inferencing$IsFullyDefinedAccumulator.process(Inferencing.scala:210)
+	at dotty.tools.dotc.typer.Inferencing$.isFullyDefined(Inferencing.scala:34)
+	at dotty.tools.dotc.typer.Inferencing$.canDefineFurther(Inferencing.scala:46)
+	at dotty.tools.dotc.typer.Typer.recover$1(Typer.scala:3905)
+	at dotty.tools.dotc.typer.Typer.adaptToSubType$1(Typer.scala:3945)
+	at dotty.tools.dotc.typer.Typer.adaptNoArgsOther$1(Typer.scala:3732)
+	at dotty.tools.dotc.typer.Typer.adaptNoArgs$1(Typer.scala:3822)
+	at dotty.tools.dotc.typer.Typer.adapt1(Typer.scala:4038)
+	at dotty.tools.dotc.typer.Typer.adapt(Typer.scala:3368)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2987)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2991)
+	at dotty.tools.dotc.typer.Typer.typedFunctionValue(Typer.scala:1464)
+	at dotty.tools.dotc.typer.Typer.typedFunction(Typer.scala:1238)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2869)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2922)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2987)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2991)
+	at dotty.tools.dotc.typer.Typer.adaptNoArgsUnappliedMethod$1(Typer.scala:3656)
+	at dotty.tools.dotc.typer.Typer.adaptNoArgs$1(Typer.scala:3820)
+	at dotty.tools.dotc.typer.Typer.adapt1(Typer.scala:4038)
+	at dotty.tools.dotc.typer.Typer.adapt(Typer.scala:3368)
+	at dotty.tools.dotc.typer.ProtoTypes$FunProto.typedArg(ProtoTypes.scala:484)
+	at dotty.tools.dotc.typer.Applications$ApplyToUntyped.typedArg(Applications.scala:866)
+	at dotty.tools.dotc.typer.Applications$ApplyToUntyped.typedArg(Applications.scala:866)
+	at dotty.tools.dotc.typer.Applications$Application.addTyped$1(Applications.scala:557)
+	at dotty.tools.dotc.typer.Applications$Application.matchArgs(Applications.scala:622)
+	at dotty.tools.dotc.typer.Applications$Application.init(Applications.scala:460)
+	at dotty.tools.dotc.typer.Applications$TypedApply.<init>(Applications.scala:748)
+	at dotty.tools.dotc.typer.Applications$ApplyToUntyped.<init>(Applications.scala:865)
+	at dotty.tools.dotc.typer.Applications.ApplyTo(Applications.scala:1077)
+	at dotty.tools.dotc.typer.Applications.ApplyTo$(Applications.scala:327)
+	at dotty.tools.dotc.typer.Typer.ApplyTo(Typer.scala:117)
+	at dotty.tools.dotc.typer.Applications.simpleApply$1(Applications.scala:923)
+	at dotty.tools.dotc.typer.Applications.realApply$1$$anonfun$3(Applications.scala:1003)
+	at dotty.tools.dotc.typer.Typer.tryEither(Typer.scala:3131)
+	at dotty.tools.dotc.typer.Applications.realApply$1(Applications.scala:1014)
+	at dotty.tools.dotc.typer.Applications.typedApply(Applications.scala:1052)
+	at dotty.tools.dotc.typer.Applications.typedApply$(Applications.scala:327)
+	at dotty.tools.dotc.typer.Typer.typedApply(Typer.scala:117)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2859)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2922)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2987)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2991)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3107)
+	at dotty.tools.dotc.typer.Namer.typedAheadExpr$$anonfun$1(Namer.scala:1618)
+	at dotty.tools.dotc.typer.Namer.typedAhead(Namer.scala:1608)
+	at dotty.tools.dotc.typer.Namer.typedAheadExpr(Namer.scala:1618)
+	at dotty.tools.dotc.typer.Namer.typedAheadRhs$1$$anonfun$1(Namer.scala:1866)
+	at dotty.tools.dotc.typer.PrepareInlineable$.dropInlineIfError(PrepareInlineable.scala:248)
+	at dotty.tools.dotc.typer.Namer.typedAheadRhs$1(Namer.scala:1866)
+	at dotty.tools.dotc.typer.Namer.rhsType$1(Namer.scala:1874)
+	at dotty.tools.dotc.typer.Namer.cookedRhsType$1(Namer.scala:1892)
+	at dotty.tools.dotc.typer.Namer.lhsType$1(Namer.scala:1893)
+	at dotty.tools.dotc.typer.Namer.inferredResultType(Namer.scala:1904)
+	at dotty.tools.dotc.typer.Namer.inferredType$1(Namer.scala:1657)
+	at dotty.tools.dotc.typer.Namer.valOrDefDefSig(Namer.scala:1664)
+	at dotty.tools.dotc.typer.Namer.defDefSig(Namer.scala:1749)
+	at dotty.tools.dotc.typer.Namer$Completer.typeSig(Namer.scala:786)
+	at dotty.tools.dotc.typer.Namer$Completer.completeInCreationContext(Namer.scala:921)
+	at dotty.tools.dotc.typer.Namer$Completer.complete(Namer.scala:809)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.completeFrom(SymDenotations.scala:171)
+	at dotty.tools.dotc.core.Denotations$Denotation.completeInfo$1(Denotations.scala:187)
+	at dotty.tools.dotc.core.Denotations$Denotation.info(Denotations.scala:189)
+	at dotty.tools.dotc.core.Types$TermRef.underlying(Types.scala:2676)
+	at dotty.tools.dotc.core.Types$Type.widen(Types.scala:1223)
+	at dotty.tools.dotc.typer.Typer.simplify(Typer.scala:2935)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2924)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2987)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2991)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3107)
+	at dotty.tools.dotc.typer.Applications.realApply$1(Applications.scala:910)
+	at dotty.tools.dotc.typer.Applications.typedApply(Applications.scala:1052)
+	at dotty.tools.dotc.typer.Applications.typedApply$(Applications.scala:327)
+	at dotty.tools.dotc.typer.Typer.typedApply(Typer.scala:117)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2859)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2922)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2987)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2991)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3107)
+	at dotty.tools.dotc.typer.Namer.typedAheadExpr$$anonfun$1(Namer.scala:1618)
+	at dotty.tools.dotc.typer.Namer.typedAhead(Namer.scala:1608)
+	at dotty.tools.dotc.typer.Namer.typedAheadExpr(Namer.scala:1618)
+	at dotty.tools.dotc.typer.Namer.typedAheadRhs$1$$anonfun$1(Namer.scala:1866)
+	at dotty.tools.dotc.typer.PrepareInlineable$.dropInlineIfError(PrepareInlineable.scala:248)
+	at dotty.tools.dotc.typer.Namer.typedAheadRhs$1(Namer.scala:1866)
+	at dotty.tools.dotc.typer.Namer.rhsType$1(Namer.scala:1874)
+	at dotty.tools.dotc.typer.Namer.cookedRhsType$1(Namer.scala:1892)
+	at dotty.tools.dotc.typer.Namer.lhsType$1(Namer.scala:1893)
+	at dotty.tools.dotc.typer.Namer.inferredResultType(Namer.scala:1904)
+	at dotty.tools.dotc.typer.Namer.inferredType$1(Namer.scala:1657)
+	at dotty.tools.dotc.typer.Namer.valOrDefDefSig(Namer.scala:1664)
+	at dotty.tools.dotc.typer.Namer$Completer.typeSig(Namer.scala:782)
+	at dotty.tools.dotc.typer.Namer$Completer.completeInCreationContext(Namer.scala:921)
+	at dotty.tools.dotc.typer.Namer$Completer.complete(Namer.scala:809)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.completeFrom(SymDenotations.scala:171)
+	at dotty.tools.dotc.core.Denotations$Denotation.completeInfo$1(Denotations.scala:187)
+	at dotty.tools.dotc.core.Denotations$Denotation.info(Denotations.scala:189)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.ensureCompleted(SymDenotations.scala:373)
+	at dotty.tools.dotc.typer.Typer.retrieveSym(Typer.scala:2800)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:2825)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2921)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2987)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2991)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:3013)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3063)
+	at dotty.tools.dotc.typer.Typer.typedBlockStats(Typer.scala:1056)
+	at dotty.tools.dotc.typer.Typer.typedBlock(Typer.scala:1060)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2867)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2922)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2987)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2991)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3107)
+	at dotty.tools.dotc.typer.Typer.$anonfun$48(Typer.scala:2295)
+	at dotty.tools.dotc.typer.PrepareInlineable$.dropInlineIfError(PrepareInlineable.scala:248)
+	at dotty.tools.dotc.typer.Typer.typedDefDef(Typer.scala:2295)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:2835)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2921)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2987)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2991)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:3013)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3063)
+	at dotty.tools.dotc.typer.Typer.typedClassDef(Typer.scala:2500)
+	at dotty.tools.dotc.typer.Typer.typedTypeOrClassDef$1(Typer.scala:2847)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:2851)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2921)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2987)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2991)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:3013)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3063)
+	at dotty.tools.dotc.typer.Typer.typedPackageDef(Typer.scala:2629)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2892)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2922)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2987)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2991)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3107)
+	at dotty.tools.dotc.typer.TyperPhase.typeCheck$$anonfun$1(TyperPhase.scala:43)
+	at dotty.tools.dotc.typer.TyperPhase.typeCheck$$anonfun$adapted$1(TyperPhase.scala:50)
+	at scala.Function0.apply$mcV$sp(Function0.scala:42)
+	at dotty.tools.dotc.core.Phases$Phase.monitor(Phases.scala:417)
+	at dotty.tools.dotc.typer.TyperPhase.typeCheck(TyperPhase.scala:50)
+	at dotty.tools.dotc.typer.TyperPhase.runOn$$anonfun$3(TyperPhase.scala:84)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.typer.TyperPhase.runOn(TyperPhase.scala:84)
+	at dotty.tools.dotc.Run.runPhases$1$$anonfun$1(Run.scala:234)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1321)
+	at dotty.tools.dotc.Run.runPhases$1(Run.scala:245)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$1(Run.scala:253)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$adapted$1(Run.scala:262)
+	at dotty.tools.dotc.util.Stats$.maybeMonitored(Stats.scala:68)
+	at dotty.tools.dotc.Run.compileUnits(Run.scala:262)
+	at dotty.tools.dotc.Run.compileSources(Run.scala:186)
+	at dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:165)
+	at scala.meta.internal.pc.MetalsDriver.run(MetalsDriver.scala:48)
+	at scala.meta.internal.pc.completions.CompletionProvider.completions(CompletionProvider.scala:47)
+
+Dec 05, 2022 9:38:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7499
+2022.12.05 21:45:35 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+Dec 05, 2022 9:45:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7930
+2022.12.05 21:46:53 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:48:05 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+Dec 05, 2022 9:50:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: 1916
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: 1916
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:647)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1977)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: 1916
+	at java.lang.String.substring(String.java:1963)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.getIndentForPos(FlatMapToForComprehensionCodeAction.scala:667)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$4(FlatMapToForComprehensionCodeAction.scala:55)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$3(FlatMapToForComprehensionCodeAction.scala:51)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$2(FlatMapToForComprehensionCodeAction.scala:50)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$1(FlatMapToForComprehensionCodeAction.scala:49)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Dec 05, 2022 9:50:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: 1916
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: 1916
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:647)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1977)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: 1916
+	at java.lang.String.substring(String.java:1963)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.getIndentForPos(FlatMapToForComprehensionCodeAction.scala:667)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$4(FlatMapToForComprehensionCodeAction.scala:55)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$3(FlatMapToForComprehensionCodeAction.scala:51)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$2(FlatMapToForComprehensionCodeAction.scala:50)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$1(FlatMapToForComprehensionCodeAction.scala:49)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.12.05 21:50:49 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+Dec 05, 2022 9:50:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: 1916
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: 1916
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:647)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1977)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: 1916
+	at java.lang.String.substring(String.java:1963)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.getIndentForPos(FlatMapToForComprehensionCodeAction.scala:667)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$4(FlatMapToForComprehensionCodeAction.scala:55)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$3(FlatMapToForComprehensionCodeAction.scala:51)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$2(FlatMapToForComprehensionCodeAction.scala:50)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$1(FlatMapToForComprehensionCodeAction.scala:49)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.12.05 21:52:01 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:52:25 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:52:41 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:53:09 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:55:07 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:56:07 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:57:06 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:57:53 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:58:00 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:58:34 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:58:45 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 21:59:39 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 22:00:55 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 22:05:38 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 22:09:45 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 22:10:02 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 22:10:04 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 22:11:03 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 22:11:03 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 22:11:10 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+Dec 05, 2022 10:12:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9997
+2022.12.05 23:10:47 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.05 23:41:55 WARN  no build target for: C:\Users\slink\projects\adventofcode22\day5\src\main\scala\Main.scala
+2022.12.06 09:19:04 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\slink\projects\adventofcode22\.metals\lsp.trace.json or C:\Users\slink\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.12.06 09:19:05 INFO  logging to file C:\Users\slink\projects\adventofcode22\.metals\metals.log
